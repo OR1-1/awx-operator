@@ -7,3 +7,7 @@ spec:
   service_type: nodeport
   nodeport_port: 8000
   hostname: awx.dev.nodeport.devops
+  image_pull_secret: awx-ee-custom-image-secret
+  ee_images:
+    - name: ibmbpi-awx-ee
+      image: loven/ibmbpi-awx-ee:latest
